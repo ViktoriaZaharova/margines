@@ -1,0 +1,206 @@
+@import "vars"
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1310px)
+  .call-box
+    max-width: 355px
+    &:nth-child(2)
+      &:before
+        left: -40px
+        width: 30px
+        height: 30px
+
+@media only screen and (max-width : 1199px)
+  .menu li
+    margin: 0 30px 0 0
+    &:last-child
+      margin: 0
+
+  .content-box
+    width: 48%
+
+  .about-wrapper
+    font-size: 20px
+
+  .ekipa-box__photo
+    width: 270px
+    height: 270px
+
+  .call-box:nth-child(2):before
+    display: none
+
+  .call-box
+    max-width: 30%
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px)
+  .menu li
+    margin: 0 30px 0 0
+    &:last-child
+      margin: 0
+    a
+      font-size: 20px
+
+  .about
+    padding: 48px 0 81px
+
+  .content-box
+    width: 100%
+
+  .about-wrapper
+    margin: 58px 0 62px
+
+  .price-column
+    width: 49%
+
+  .call-box
+    max-width: 48%
+    margin: 0 0 55px
+    &:last-child
+      margin: 0
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 930px)
+  .ekipa-box__photo
+    margin: 0 auto 31px
+    &:last-child
+      margin: 0
+
+  .ekipa
+    padding: 81px 0 27px
+    font-size: 16px
+
+  .ekipa-box
+    margin: 0 0 76px
+
+
+  .ekipa-name
+    margin: 0 0 21px
+    font-size: 26px
+
+  .ekipa-wrapper
+    margin: 76px 0 0
+    justify-content: space-around
+
+  .gallery-box
+    max-height: 420px
+
+@media only screen and (max-width : 840px)
+  .price-column
+    width: 100%
+
+@media only screen and (max-width : 768px)
+  .logo
+    width: 117px
+
+
+  .gallery-box
+    border-width: 2px
+
+  .call-box
+    font-size: 16px
+    line-height: 30px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 670px)
+  header
+    .menu
+      display: none
+    .container
+      justify-content: space-between
+
+
+
+  .btn-burger
+    display: flex
+
+  header
+    position: relative
+    padding: 23px 0
+
+  main
+    height: auto
+    padding: 218px 0 22px
+    background: url("../img/bg-header-mobile.jpg") no-repeat center
+      size: cover
+
+  .btn-scroll
+    display: none
+
+  .btn-call
+    display: flex
+    margin: 118px 0 0 auto
+
+  .about-wrapper
+    font-size: 16px
+    line-height: 27px
+
+  .list-social
+    li
+      margin: 0 50px 0 0
+      a
+        width: 33px
+        height: 33px
+
+  h2
+    font-size: 42px
+    padding: 0 15px
+    &:before
+      height: 5px
+
+  .price
+    padding: 74px 0 8px
+
+  .price-box
+    margin: 0 0 95px
+    h3
+      font-size: 30px
+      margin: 0 0 60px
+    ul
+      font-size: 16px
+
+  .price-wrapper
+    margin: 68px 0 0
+
+  .time
+    min-width: 75px
+
+  .price-service
+    min-width: 40px
+
+  .gallery
+    padding: 55px 0 42px
+
+  .gallery-wrapper
+    margin: 42px 0 0
+
+  .call-box
+    max-width: 100%
+    width: 100%
+    h3
+      font-size: 22px
+      margin: 0 0 27px
+    ul
+      li
+        span
+          min-width: 60px
+
+  .call-wrapper
+    margin: 55px 0 0
+
+  .call
+    padding: 74px 0 105px
+
+  .main-logo
+    img
+      display: none
+    .img-mobile
+      display: block
+
+
+@media only screen and (max-width : 340px)
+  h2
+    font-size: 36px
+
+
