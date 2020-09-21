@@ -538,5 +538,49 @@ h2
     position: absolute
     background: transparent linear-gradient(253deg, #FD5533 0%, #FAD200 26%, #00C334 50%, #177DFF 74%, #A71FCF 94%, #A71FCF 100%) 0% 0% no-repeat padding-box
 
+
+//sklep
+.sklep
+  padding: 0 0 127px
+  h2
+    margin: 0 auto 74px
+    &:before
+      background: #000
+
+.sklep-wrapper
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: center
+  margin: 0 -7px
+
+.col-25
+  width: 25%
+  padding: 0 7px
+  margin: 0 0 20px
+
+.sklep-box
+  padding: 20px
+  margin: 0 auto
+  border: 1px solid #E6ECF0
+    radius: 14px
+  font-size: 14px
+  line-height: 23px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  height: 100%
+
+.sklep-box__img
+  max-height: 230px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.sklep-box__name
+  min-height: 40px
+
+
 @import "media"
 // Всегда в конце

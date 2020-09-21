@@ -732,6 +732,67 @@ h2 {
     position: absolute;
     background: transparent linear-gradient(253deg, #FD5533 0%, #FAD200 26%, #00C334 50%, #177DFF 74%, #A71FCF 94%, #A71FCF 100%) 0% 0% no-repeat padding-box; }
 
+.sklep {
+  padding: 0 0 127px; }
+  .sklep h2 {
+    margin: 0 auto 74px; }
+    .sklep h2:before {
+      background: #000; }
+
+.sklep-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 -7px; }
+
+.col-25 {
+  width: 25%;
+  padding: 0 7px;
+  margin: 0 0 20px; }
+
+.sklep-box {
+  padding: 20px;
+  margin: 0 auto;
+  border: 1px solid #E6ECF0;
+    border-radius: 14px;
+  font-size: 14px;
+  line-height: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%; }
+
+.sklep-box__img {
+  max-height: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.sklep-box__name {
+  min-height: 40px; }
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1310px) {
   .call-box {
@@ -778,7 +839,9 @@ h2 {
     max-width: 48%;
     margin: 0 0 55px; }
     .call-box:last-child {
-      margin: 0; } }
+      margin: 0; }
+  .col-25 {
+    width: 33.3%; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 930px) {
@@ -812,7 +875,9 @@ h2 {
     border-width: 2px; }
   .call-box {
     font-size: 16px;
-    line-height: 30px; } }
+    line-height: 30px; }
+  .col-25 {
+    width: 50%; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 670px) {
@@ -888,7 +953,30 @@ h2 {
   .main-logo img {
     display: none; }
   .main-logo .img-mobile {
-    display: block; } }
+    display: block; }
+  .sklep h2 {
+    margin: 0 auto 37px; }
+  .sklep-box {
+    padding: 0 11px 15px;
+    font-size: 12px; }
+  .sklep-box__name {
+    min-height: 30px; }
+  .col-25 {
+    margin: 0 0 10px; }
+  .sklep {
+    padding: 0 0 40px; } }
+
+@media only screen and (max-width: 480px) {
+  .sklep-box {
+    font-size: 7px;
+    line-height: 12px; }
+  .sklep-box__name {
+    min-height: 20px; }
+  .col-25 {
+    margin: 0 0 5px;
+    padding: 0 5px; }
+  .sklep-wrapper {
+    margin: 0 -5px; } }
 
 @media only screen and (max-width: 340px) {
   h2 {
