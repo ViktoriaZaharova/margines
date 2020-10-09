@@ -87,6 +87,7 @@ a
   text-decoration: none
   outline: none
   transition: .3s ease
+
   &:hover, &:focus
     text-decoration: none
 
@@ -112,6 +113,7 @@ header
   z-index: 3
   left: 0
   top: 0
+
   &:before
     content: ''
     position: absolute
@@ -129,10 +131,13 @@ header
   align-items: center
   flex-wrap: wrap
   margin: 0 0 0 auto
+
   li
     margin: 0 82px 0 0
+
     &:last-child
       margin: 0
+
     a
       font-size: 26px
       font-weight: 800
@@ -142,6 +147,7 @@ header
 .links-gradient
   display: flex
   align-items: center
+
   span
     -webkit-background-clip: text
     background-clip: text
@@ -155,6 +161,7 @@ main
     size: cover
   height: 100vh
   padding: 105px 0 27px
+
   .container
     flex-direction: column
     align-items: center
@@ -170,6 +177,7 @@ main
   align-items: center
   color: #fff
   font-family: 'Lasiver', sans-serif
+
   .icon
     width: 37px
     height: 37px
@@ -180,6 +188,7 @@ main
     background: #fff
     padding: 5px
     margin: 0 auto 17px
+
     svg
       fill: #000000
       width: 20px
@@ -203,6 +212,7 @@ h2
   font-weight: 500
   margin: 0 auto
   padding: 0 15px
+
   &:before
     content: ''
     position: absolute
@@ -211,17 +221,20 @@ h2
     width: 100%
     height: 9px
     background: #fff
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
 
 .list-social
   display: flex
   align-items: center
   justify-content: center
   width: 100%
+
   li
     margin: 0 78px 0 0
+
     &:last-child
       margin: 0
+
     a
       display: flex
       align-items: center
@@ -236,9 +249,11 @@ h2
   margin: 126px 0 115px
   line-height: 40px
   font-size: 23px
+
   ul
     strong
       font-weight: bold
+
     img
       display: inline
       width: 20px
@@ -256,8 +271,10 @@ h2
 //ekipa
 .ekipa
   padding: 125px 0
+
   h2
     color: #000000
+
     &:before
       background: #000000
 
@@ -313,6 +330,7 @@ h2
 
 .price-column
   width: 45%
+
   h3
     margin: 0 0 60px
     font-size: 36px
@@ -320,11 +338,13 @@ h2
 
 .price-box
   margin: 0 0 80px
+
   ul
     font-size: 23px
     font-weight: 500
     width: 100%
     line-height: 40px
+
     li
       padding: 10px 0
       width: 100%
@@ -332,6 +352,7 @@ h2
       align-items: flex-start
       margin: 0 0 10px
       border-bottom: 1px solid #fff
+
       &:last-child
         margin: 0
         border: none
@@ -357,6 +378,7 @@ h2
 //gallery
 .gallery
   padding: 86px 0 115px
+
   h2
     &:before
       background: #000
@@ -377,6 +399,7 @@ h2
   width: 33.3333%
   max-height: 620px
   overflow: hidden
+
   img
     width: 100%
     height: 100%
@@ -404,35 +427,47 @@ h2
   font-size: 23px
   line-height: 40px
   position: relative
+
   h3
     margin: 0 0 54px
     font-size: 26px
     font-weight: 900
+
   a
     display: block
     color: #fff
+
   p
     margin: 0 0 20px
+
     &:last-child
       margin: 0
+
     a
       display: inline
+
     img
       display: inline
       width: 25px
+
   strong
     font-weight: bold
+
   ul
     width: 100%
+
     li
       width: 100%
       display: flex
       align-items: center
       justify-content: space-between
+
       span
         min-width: 115px
+
     p
       margin: 0
+
   &:nth-child(2)
     &:before
       content: ''
@@ -456,6 +491,7 @@ h2
   width: 22px
   cursor: pointer
   position: relative
+
   span
     height: 2px
     background: #000
@@ -464,6 +500,7 @@ h2
     margin: 0 0 6px
     border-radius: 1px
     transition: .3s ease
+
     &:last-child
       margin: 0
 
@@ -471,9 +508,11 @@ h2
   span
     &:nth-child(2)
       width: 0
+
     &:first-child
       transform: rotate(45deg)
       margin: -3px 0 0 0
+
     &:last-child
       margin: -10px 0 0
       transform: rotate(135deg)
@@ -488,14 +527,17 @@ h2
   width: 100%
   background: #fff
   z-index: 3
+
   .menu
     display: flex
     flex-direction: column
     align-items: center
     flex-wrap: nowrap
     width: 100%
+
     li
       width: 100%
+
       a
         width: 100%
         color: #000
@@ -514,6 +556,7 @@ h2
   font-size: 18px
   font-weight: 800
   position: relative
+
   .text
     width: calc(100% - 4px)
     height: calc(100% - 4px)
@@ -524,12 +567,14 @@ h2
     display: flex
     align-items: center
     justify-content: center
+
   .links-gradient
     display: inline-block
     -webkit-background-clip: text
     background-clip: text
     color: transparent
     background-image: linear-gradient(to left, #FD5533 0%, #FAD200 26%, #00C334 50%, #177DFF 74%, #A71FCF 94%, #A71FCF 100%)
+
   &:before
     content: ''
     border-radius: 12px
@@ -542,8 +587,10 @@ h2
 //sklep
 .sklep
   padding: 0 0 127px
+
   h2
     margin: 0 auto 74px
+
     &:before
       background: #000
 
@@ -580,6 +627,98 @@ h2
 
 .sklep-box__name
   min-height: 40px
+
+//new style
+h2
+  font-size: 61px
+  &:before
+    height: 6px
+
+.gallery-wrapper
+  margin: 58px 0 0
+
+.gallery
+  padding: 46px 0 72px
+
+.col-25
+  margin: 0 0 14px
+
+.price-box ul
+  font-size: 18px
+
+.container
+  max-width: 1200px
+  padding: 0 10px
+
+.sklep
+  padding: 0 0 65px
+
+.sklep-box
+  position: relative
+  overflow: hidden
+  &:hover
+    .sklep-box__hover
+      display: block
+
+.sklep-box__img
+  height: 100%
+
+.sklep-box__price
+  margin: 0 0 10px
+  font-size: 19px
+  font-weight: 900
+
+.sklep-box__title
+  font-size: 14px
+  font-weight: bold
+
+.sklep-box__hover
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: calc(100% - 75px)
+  background: rgba(#fff, .9)
+  padding: 33px 15px
+  transition: .3s ease
+  font-size: 14px
+  line-height: 23px
+  display: none
+  z-index: 1
+  overflow: hidden
+
+@media (max-width: 480px)
+  .sklep-box__hover
+    position: relative
+    height: auto
+    display: block
+    background: transparent
+    overflow: visible
+    padding: 0
+    margin: 8px 0 0
+    font-size: 10px
+    line-height: 15px
+
+  .sklep-box__name
+    min-height: auto !important
+
+  .sklep-box__price
+    font-size: 14px
+    margin: 13px 0 7px
+
+  .sklep-box__title
+    font-size: 12px
+
+  .sklep-box
+    padding: 12px !important
+
+@media (max-width: 360px)
+  .col-25
+    width: 100% !important
+    padding: 0 !important
+
+  .sklep-wrapper
+    margin: 0 auto !important
 
 
 @import "media"
