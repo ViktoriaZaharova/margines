@@ -584,8 +584,8 @@ h2
     background: transparent linear-gradient(253deg, #FD5533 0%, #FAD200 26%, #00C334 50%, #177DFF 74%, #A71FCF 94%, #A71FCF 100%) 0% 0% no-repeat padding-box
 
 
-//sklep
-.sklep
+//score
+.score
   padding: 0 0 127px
 
   h2
@@ -594,7 +594,7 @@ h2
     &:before
       background: #000
 
-.sklep-wrapper
+.score-wrapper
   width: 100%
   display: flex
   align-items: stretch
@@ -607,7 +607,7 @@ h2
   padding: 0 7px
   margin: 0 0 20px
 
-.sklep-box
+.score-box
   padding: 20px
   margin: 0 auto
   border: 1px solid #E6ECF0
@@ -619,67 +619,68 @@ h2
   justify-content: space-between
   height: 100%
 
-.sklep-box__img
+.score-box__img
   max-height: 230px
   display: flex
   align-items: center
   justify-content: center
 
-.sklep-box__name
+.score-box__name
   min-height: 40px
 
 //new style
-h2
-  font-size: 61px
-  &:before
-    height: 6px
+.score
+  h2
+    font-size: 61px
+    &:before
+      height: 6px
+  .container
+    max-width: 1200px
+    padding: 0 10px
+  .col-25
+    margin: 0 0 14px
 
-.gallery-wrapper
-  margin: 58px 0 0
+//.gallery-wrapper
+//  margin: 58px 0 0
+//
+//.gallery
+//  padding: 46px 0 72px
+//
+//.price-box ul
+//  font-size: 18px
 
-.gallery
-  padding: 46px 0 72px
 
-.col-25
-  margin: 0 0 14px
 
-.price-box ul
-  font-size: 18px
-
-.container
-  max-width: 1200px
-  padding: 0 10px
-
-.sklep
+.score
   padding: 0 0 65px
 
-.sklep-box
+.score-box
   position: relative
   overflow: hidden
   padding: 0 5px 20px
   justify-content: flex-start
   &:hover
-    .sklep-box__hover
+    .score-box__hover
       display: flex
 
-.sklep-box__name
+.score-box__name
   padding: 0 15px
 
-.sklep-box__img
+.score-box__img
   height: 271px
   max-height: none
 
-.sklep-box__price
+.score-box__price
   font-size: 19px
   font-weight: 900
   line-height: 23px
 
-.sklep-box__title
+.score-box__title
   font-size: 14px
   font-weight: bold
   line-height: 23px
 
-.sklep-box__hover
+.score-box__hover
   position: absolute
   left: 0
   top: 0
@@ -697,15 +698,28 @@ h2
   justify-content: center
 
 @media (max-width: 860px)
-  .sklep-box__hover
+  .score-box__hover
     height: calc(100% - 87px)
 
 @media (max-width: 670px)
-  .sklep-box__name
+  .score-box__name
     padding: 0
 
+  .score h2
+    margin: 0 auto 37px
+
+  .score-box
+    padding: 0 11px 15px
+    font-size: 12px
+
+  .score-box__name
+    min-height: 30px
+
+  .score
+    padding: 0 0 40px
+
 @media (max-width: 480px)
-  .sklep-box__hover
+  .score-box__hover
     position: relative
     height: auto
     display: block
@@ -716,23 +730,23 @@ h2
     font-size: 10px
     line-height: 15px
 
-  .sklep-box__name
-    min-height: auto !important
+  .score-box__name
+    min-height: auto
 
-  .sklep-box__price
+  .score-box__price
     font-size: 14px
     margin: 13px 0 7px
     line-height: 17px
 
-  .sklep-box__title
+  .score-box__title
     font-size: 12px
     line-height: 17px
     min-height: 32px
 
-  .sklep-box
-    padding: 12px !important
+  .score-box
+    padding: 12px
 
-  .sklep-box__img
+  .score-box__img
     height: 127px
     max-width: 127px
     width: 100%
@@ -741,12 +755,13 @@ h2
       max-height: 100%
 
 @media (max-width: 360px)
-  .col-25
-    width: 100% !important
-    padding: 0 !important
+  .score
+    .col-25
+      width: 100%
+      padding: 0
 
-  .sklep-wrapper
-    margin: 0 auto !important
+  .score-wrapper
+    margin: 0 auto
 
 
 @import "media"
